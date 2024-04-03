@@ -1,0 +1,274 @@
+/* Changing the margins and padding of the web page to 0 */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+body {
+    margin: 0 100px;
+}
+
+/* Styling for the header */
+header {
+    background-color: black;
+    color: white;
+    font-family: "Roboto Condensed", sans-serif;
+    font-style: normal;
+    height: 120px;
+    margin-left: -100px;
+    margin-right: -100px;
+}
+
+header label {
+    position: absolute;
+    top: 57px;
+    left: 100px;
+    font-size: 20px;
+}
+
+header select {
+    position: absolute;
+    top: 50px;
+    left: 180px;
+}
+
+select {
+    appearance: none;
+    background-color: #ffffff; 
+    border: 1px solid #ccc; 
+    padding: 10px; 
+    font-size: 16px;
+}
+
+select option {
+    background-color: #ffffff; 
+    color: #333; 
+    font-size: 16px;
+    padding: 10px;
+}
+
+header p {
+    position: absolute;
+    top: 60px;
+    left: 1100px;
+    font-size: 17px;
+}
+
+.logo {
+    padding: 30px 0px 0px 0px;
+    width: 300px;
+    height: auto;
+}
+
+.container {
+    position: relative;
+}
+
+.container-item {
+    position: absolute;
+    top: 60px;
+    left: 1000px;
+}
+
+
+
+/* Styling search bar */
+input[type="text"] {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    vertical-align: middle;
+}
+
+/* Styling the search button */
+button[type="submit"] {
+    background: none;
+    border: none;
+    cursor: pointer;
+    vertical-align: middle;
+    transition: transform 0.3s ease; 
+    margin-right: 30px;
+}
+
+button[type="submit"] img {
+    width: 48px;
+    height: 44px; 
+}
+
+button[type="submit"]:hover {
+    transform: scale(1.1);  /*This enlarges the button when hovered over it*/
+}
+
+/* Styling the donate button */
+.container .container-item a {
+    text-decoration: none;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    background-color: #FFF100;
+    color: black; 
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ;  /*Transitions from one color to other with a gap of 0.3 seconds for easy flow*/
+}
+
+.container .container-item a:hover {
+    background-color: black; 
+    color: white;
+}
+
+
+/* Styling div to make nav bar */
+
+.navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 70px 50px;
+}
+
+.navbar a {
+    text-decoration: none;
+    padding: 20px 100px;
+    font-family: "Roboto Condensed", sans-serif;
+    color: black;
+    font-size: 20px;
+    font-weight: bold;
+    transition: transform 0.3s ease;
+    border-radius: 5px;
+}
+
+.navbar a:hover {
+    background-color: #FFF100;
+    color: black;
+}
+
+
+/* Styling the donate and volunteer section */
+
+.supportUsHeading {
+    background-color: #feff90;
+    margin: 30px 0px;
+    padding: 40px;
+    text-align: center;
+    font-family: 'Righteous', sans-serif;
+    font-size: 50px;
+    letter-spacing: 1.5px;
+}
+
+.supportContainer {
+    display: flex;
+    justify-content: space-around;
+    background: #FFF100;
+    padding: 80px 20px;
+    margin-top: 120px;
+    margin-bottom: 150px;
+    margin-left: -100px;
+    margin-right: -100px;
+}
+
+.supportContainer .donate, .supportContainer .volunteer {
+    background-color: #feff90;
+    padding: 30px 20px;
+    width: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.supportContainer .donate h2, .supportContainer .volunteer h2 {
+    font-size: 30px;
+    font-family: "Righteous", sans-serif;
+    letter-spacing: 1px;
+    padding: 10px;
+    margin-bottom: 30px;
+}
+
+.supportContainer .donate p, .supportContainer .volunteer p {
+    font-size: 20px;
+    margin: 0px 0px 20px 0px;
+}
+
+.supportContainer .donate img, .supportContainer .volunteer img {
+    width: 480px;
+    margin: 30px 0px;
+}
+
+.supportContainer .donate a, .supportContainer .volunteer a {
+    text-decoration: none;
+    padding: 10px 50px;
+    border: none;
+    background-color: black;
+    color: white;
+    border-radius: 8px;
+    font-family: "Roboto", serif;
+    font-size: 18px;
+    font-weight: bold;
+    border: 2px solid black;
+    transition: background-color 0.3s ease;
+}
+
+.supportContainer .donate a:hover,
+.supportContainer .volunteer a:hover {
+    background-color: white;
+    color: black;
+    border: 2px solid black;
+}
+
+
+/* Styling the footer */
+
+.footer-container {
+    margin: 100px -100px 0px;
+    padding: 30px;
+    background-color: black;
+    height: 70vh;
+    display: flex; 
+    flex-direction: column; 
+    justify-content: space-between; 
+}
+
+.footer-item1 {
+    flex: 1; /*Expand to fill available space*/
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+
+.footer-container .logo {
+    margin: 0px;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.footer-item1 ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-item1 ul li {
+    padding: 8px;
+}
+
+.footer-item1 ul li a {
+    color: white;
+    font-size: 18px;
+    text-decoration: none;
+}
+
+.logo img {
+    max-height: 100%; /* Ensure images don't exceed container height */
+}
+
+.footer-container .copyright {
+    color: white;
+    text-align: center; 
+    padding: 20px 0px;
+}

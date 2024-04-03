@@ -1,0 +1,164 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    display: block;
+}
+
+.cniblogo {
+    margin-top: 20px;
+    margin-bottom: 50px;
+    margin-left: 100px;
+}
+
+.container {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)) ,url(images/goldenRetriever.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    height: 150vh;
+    margin-bottom: 100px;
+    padding: 30px;
+}
+
+.container h1 {
+    position: absolute;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-size: 40px;
+    margin-left: 180px;
+    margin-right: 180px;
+    top: 40px;
+}
+
+.grid {
+    position: absolute;
+    top: 200px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    margin: 0px 50px;
+}
+
+.container .grid .info {
+    /* border: 2px solid red; */
+    width: 80%;
+}
+
+.container .grid .info p {
+    font-size: 18px;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    line-height: 30px;
+}
+
+.container .grid .form {
+    text-align: center;
+    width: 80%;
+    padding: 30px;
+    border: 1px solid #000;
+    background: linear-gradient(to left, rgba(255, 255, 255, 0.316), rgba(255, 255, 255, 0.316));
+}
+
+/* Headings */
+.container .grid .form h2 {
+    font-size: 25px;
+    margin-bottom: 10px;
+    color: #000;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Labels */
+.container .grid .form label {
+    display: block;
+    margin-bottom: 10px;
+    color: #000;
+    font-size: 18px;
+    text-align: left;
+}
+
+/* Inputs */
+.container .grid .form input[type="text"],
+.container .grid .form input[type="email"],
+.container .grid .form input[type="tel"],
+.container .grid .form input[type="number"],
+.container .grid .form input[type="date"],
+.container .grid .form input[type="password"],
+.container .grid .form select {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #000;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+/* Button */
+.container .grid .form button {
+    background-color: #fff100;
+    color: black;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.container .grid .form button:hover {
+    background-color: black;
+    color: white;
+}
+
+
+/* Styling the footer */
+
+.footer-container {
+    margin: 100px -100px 0px;
+    padding: 30px;
+    background-color: black;
+    height: 70vh;
+    display: flex; 
+    flex-direction: column; 
+    justify-content: space-between; 
+}
+
+.footer-item1 {
+    flex: 1; /*Expand to fill available space*/
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+
+.footer-container .logo {
+    margin: 0px;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.footer-item1 ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-item1 ul li {
+    padding: 8px;
+}
+
+.footer-item1 ul li a {
+    color: white;
+    font-size: 18px;
+    text-decoration: none;
+}
+
+.logo img {
+    max-height: 100%; /* Ensure images don't exceed container height */
+}
+
+.footer-container .copyright {
+    color: white;
+    text-align: center; 
+    padding: 20px 0px;
+}

@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Adding Roboto condensed font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <!-- Adding Righteous static font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
+
+    <!-- Connecting the styles css file to the html file -->
+    <link rel="stylesheet" href="styles.css">
+    <title>CNIB | Home</title>
+</head>
+<body>
+    <!-- This is the header of the page -->
+    <header>
+
+        <!-- This is a dropdown menu button from which the user can choose their province -->
+        <label>Province: </label>
+        <select>
+            <option>Select a Province</option>
+            <option>Ontario</option>
+            <option>Alberta and NWT</option>
+            <option>British Columbia and Yukon</option>
+            <option>Manitoba</option>
+            <option>New Brunswick</option>
+            <option>Nova Scotia</option>
+            <option>Prince Edward Island</option>
+            <option>Quebec</option>
+        </select>
+
+        <p>Make a quick call at 1-800-563-2642 to get more information</p>
+    </header>
+
+
+    <!-- Here is the logo and the search bar for the webpage -->  
+   
+    <div class="container">
+        <img src="images/cnib-logo.svg" alt="CNIB foundation logo" class="logo">
+        <div class="container-item">
+            <input type="text" placeholder="Search...">
+            <button type="submit"><img src="images/search-square.svg" alt="search"></button>
+            <a href="support.html">DONATE</a>
+        </div>
+    </div>
+
+
+    <!-- This is the nav bar -->
+    <div class="navbar">
+        <a href="index.html">Home</a>
+        <a href="support.html">Support</a>
+        <a href="programs.html">Services</a>
+        <a href="about.html">AboutUs</a>
+        <a href="contact.html">Contact</a>
+    </div>
+
+    <!-- Guide dog program glance -->
+    <div class="container1"> 
+        <div class="box1">
+            <img src="images/cnib_dog.jpg" alt="Image of a CNIB guide dog">
+
+            <div class="box2">
+                <h2>We need your help today.</h2> <br>
+
+                <p>Guide dogs help their users to travel around independently and safely, giving their users more independence, freedom and confidence !</p>
+
+                <a href="form.html">Donate Now !</a>
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- Grid for the different areas the user might want to explore -->
+    <div class="gridContainer">
+
+        <div class="gridItem1">
+            <h1 class="grid-heading">News</h1>
+            <img src="images/announcement.webp" alt="news image">
+            <p class="grid-info"> <b>TTC CNIB transit pass update </b><br> <br>
+                The TTC has extended the expiration date for TTC CNIB cards used by eligible CNIB clients when travelling on the system. TTC CNIB cards that were set to expire on January 31, 2024, will now expire on January 31, 2025. This means that your card is now valid for another year. To activate the new expiration date, simply tap your TTC CNIB card on a PRESTO card reader on a fare gate, bus, streetcar or Wheel-Trans vehicle anytime between January 22, 2024 and April 20, 2024.
+            </p>
+            <a href="https://www.cnib.ca/en/news?region=on" target="_blank">Read More</a> <!--Target attribute opens the page in a new tab when the button is clicked-->
+        </div>
+
+        <div class="gridItem2">
+            <h1 class="grid-heading">Events</h1>
+            <img src="images/events.jpg" alt="event image">
+            <p class="grid-info"><b>May 12, 2024</b> <br> <br>
+            Official meetup of the CNIB with the people of Toronto at the Nathan Phillips Square to give people information about the programs and services CNIB provides to it's users and help get more support from the people.</p>
+            <a href="https://www.cnib.ca/en/event/tuesday-zoom-coffee-and-chat?region=on" target="_blank">Read More</a>
+        </div>
+
+        <div class="gridItem3">
+            <h1 class="grid-heading">Blogs</h1>
+            <img src="images/healthcare.jpg" alt="healthcare-professionals">
+            <p class="grid-info"><b>Improving Accessible Health Care in Newfoundland and Labrador </b> <br> <br>
+                CNIB Newfoundland and Labrador has been hosting a series of educational sessions about accessible health care with the province's current (and future!) health care providers. As part of this important work, we have developed new partnerships and delivered sessions to many medical professionals, dental hygienists, home care agencies, and paramedics across the province. 
+            </p>
+            <a href="https://www.cnib.ca/en/blog/improving-accessible-health-care-newfoundland-and-labrador?region=on" target="_blank"> Read More</a>
+        </div>
+    </div>
+
+
+    <!-- Giving some navigation for the projects of the charity -->
+    <h1 class="headingForTabs">Our Programs</h1>
+    <div class="myTabs">
+
+        <!-- First Tab -->
+        <input type="radio" name="myTabs" id="guideDogTab" checked="checked">
+        <label for="guideDogTab">Guide Dog Program</label>
+        <div class="tabContent">
+            <h2>Guide Dog Program</h2>
+            <img src="images/cnibGuideDog.webp" alt="">
+            <p>CNIB is at a critical point in accelerating the development of a sustainable, full-service guide dog program to meet the expanded needs of Canadians with sight loss. People with sight loss often say having a guide dog is a transformational experience. Being part of a guide dog team provides mobility, safety and confidence, leading to increased independence and a sense of connection with the world. We believe everyone who would like to have a guide dog should have that opportunity. At CNIB Guide Dogs, we raise, train and match dogs with Canadians who are blind or partially sighted. We also raise our voices to ensure people with sight loss have opportunities to live, work and play without barriers. We're committed to ensuring social attitudes shift to universal acceptance and appreciation for guide dogs.</p>
+            <a href="">
+                Read More
+            </a>
+        </div>
+
+        <!-- Second Tab -->
+        <input type="radio" name="myTabs" id="visionMate">
+        <label for="visionMate">Vision Mate Program</label>
+        <div class="tabContent">
+            <h2>Vision Mate Program</h2>
+            <img src="images/visionMateProgram.jpeg" alt="">
+            <p>For Canadians who are blind or partially sighted, physical distancing can present a unique set of challenges that can contribute to feelings of isolation that many already experience on a daily basis. 
+
+                During this unprecedented time, one of the easiest things we can do is reach out to each other to engage in friendly conversation and offer support. 
+                
+                To combat the negative ramifications that isolation can have on Canadians with sight loss, the CNIB Foundation has adapted one of its core program offerings, the Vision Mate program, to engage volunteers to connect virtually with participants by phone or online at least once a week. 
+                
+                With physical distancing measures in place, it can be difficult for people with sight loss to pick up their groceries and prescriptions. If you're willing to help, we'd love to hear from you. Together, we'll ensure our community stays connected.  
+            </p>
+            <a href="">
+                Read More
+            </a>
+        </div>
+
+        <!-- Third Tab -->
+        <input type="radio" name="myTabs" id="play">
+        <label for="play">Sport and Rec</label>
+        <div class="tabContent">
+            <h2>Sports and Recreational program</h2>
+            <img src="images/yoga.jpg" alt="">
+            <p>CNIB Foundation's culture, sports and recreation programs provide you with opportunities to take part in a variety of creative classes, community-based workshops, physical activities and excursions. 
+            Do you have a question about sport or physical activity when it comes to things like adaptive equipment, advocacy, finding guides, funding, or even “how do I even get started? “ <br>
+            This new program serves to act as an outlet for your sport and physical activity inquiries, big and small!
+            As the provincial sports lead, Ryan Van Praet has decades of knowledge and experience in the world of not only health and fitness education, but also as an athlete who has competed in many different sports on many different levels, having made many connections. Let Ryan leverage this knowledge and experience to help you! 
+            </p>
+            <a href="">
+                Read More
+            </a>
+        </div>
+    </div>
+    
+    <footer>
+        <div class="footer-container">
+            <div class="footer-item1">
+                <ul>
+                    <li><a href="#">Careers</a></li>
+                    <li><a href="#">Voluteer Opportunities</a></li>
+                    <li><a href="#">Media</a></li>
+                    <li><a href="#">CNIB Guide dogs</a></li>
+                    <li><a href="#">Disclaimer</a></li>
+                    <li><a href="#">Privacy policy</a></li>
+                </ul>
+            </div>
+
+            <div class="logo">
+                <div>
+                    <img src="images/ImagineCanadaWhite-rs250.png" alt="Imgine canada accredited image">
+                </div>
+    
+                <div>
+                    <img src="images/guide_dog_federation.jpg" alt="Guide dog federation logo">
+                </div>
+            </div>
+
+            <p class="copyright">Copyright © 2023 CNIB. All rights reserved. Registered Charity: 119219459RR0003</p>
+
+        </div>
+      
+    </footer>
+</body>
+</html>
